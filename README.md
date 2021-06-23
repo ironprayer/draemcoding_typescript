@@ -33,3 +33,7 @@
 
 4. Typescript 관련해서 알아둬야 하는 사이트
   - TS 공식 사이트(https://www.typescriptlang.org/)
+
+2021.06.22 - 2021.06.27 공부 계획
+  - Typescript 타입 및 객체 지행 강의 듣기
+  - 강의 코드 작성 및 
