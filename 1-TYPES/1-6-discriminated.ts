@@ -1,29 +1,20 @@
 {
-    /**
-     * Union Types: OR
-     */
-    type Direction = 'left' | 'right' | 'up' | 'down';
-    function move(direction: Direction) {
-        console.log(direction);
-    }
-    move('down')
-
-    type TileSize = 8 | 16 | 32;
-    const tile: TileSize = 8;
-
     // function: login -> success, fail
     type SuccessState ={
+        result: 'success';
         response:{
             body: string;
         };
     };
     type FailState = {
+        result: 'fail';
         reason: string;
     }
 
     type LoginStatus = SuccessState | FailState;
     function login() : LoginStatus {
         return {
+            result:'success',
             response:{
                 body: 'logged in',
             }
@@ -36,11 +27,12 @@
 
     
     function printLoginState(state:LoginStatus){
-        if('response' in state) {
+        if(state.result === 'success') {
             console.log(`축하 ${state.response.body}`);
         }else{
             console.log(`실패 ${state.reason}`)
         }
     }
-    
+
+
 }
