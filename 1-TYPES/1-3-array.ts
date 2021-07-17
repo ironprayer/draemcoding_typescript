@@ -9,7 +9,7 @@
 
     //Tuple 사용 권장하지 않음 -> interface, type alias, class로 대체
     //데이터 접근을 할 때 인덱스로 하는 건 가독성이 떨어짐
-    let student: [string, number];
+    let student: [string, number]; 
     student = ['name',123];
     student[0] // name
     student[1] // 123
