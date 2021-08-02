@@ -11,7 +11,7 @@ let position:Position = {
     y :0
 }
 
-type Direction = 'up' | 'down' | 'left' | 'right'
+type Direction = 'up' | 'down' | 'left' | 'right' | 'he'
 function move(direction: Direction) :void{
     switch(direction){
         case 'up':{
@@ -31,6 +31,7 @@ function move(direction: Direction) :void{
             break;
         }
         default :
+            //const invalid:never = direction;
             throw new Error("known error");
     }
 }
