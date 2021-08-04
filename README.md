@@ -44,3 +44,4 @@
 
 2022.08.01
   - 이번주 데모 사이트 작성 
+  - Motion 연습 (Typescript, html, css)
